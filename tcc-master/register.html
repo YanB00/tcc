@@ -40,14 +40,14 @@
     <div class="register">
         <form>
             <h1>Cadastre-se</h1>
-            <p>Nome Completo:</p><input type="text" name="nome-completo">
-            <p>Nome do seu negócio:</p><input type="text" name="nome-negocio">
-            <p>E-mail:</p><input type="email" name="email">
-            <p>Senha:</p><input type="password" name="senha">
-            <p>Confirme sua senha:</p><input type="password" name="confirma-senha">
-            <p>Telefone:</p><input type="tel" name="telefone">
+            <p>Nome Completo:</p><input type="text" name="nome-completo" required
+            <p>Nome do seu negócio:</p><input type="text" name="nome-negocio" required>
+            <p>E-mail:</p><input type="email" name="email" required>
+            <p>Senha:</p><input type="password" name="senha" required>
+            <p>Confirme sua senha:</p><input type="password" name="confirma-senha" required>
+            <p>Telefone:</p><input type="tel" name="telefone" required>
             <!-- Novo campo de CPF -->
-            <p>CPF:</p><input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00">
+            <p>CPF:</p><input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
             <button class="save">Cadastrar Negócio</button>
         </form>
     </div>
