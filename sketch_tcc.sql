@@ -4,11 +4,11 @@ use sketch_tcc;
 
 CREATE TABLE saloes (
 	id_salao int primary key auto_increment,
+    nome_completo VARCHAR (100) NOT NULL,
     nome_salao VARCHAR(100) NOT NULL,
     cpf CHAR (11) UNIQUE NOT NULL,
     telefone VARCHAR(20),
     email VARCHAR(100) NOT NULL,
-    login VARCHAR(50) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL
 );
 
