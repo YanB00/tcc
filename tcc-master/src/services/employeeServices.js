@@ -31,7 +31,7 @@ async function updateFuncionario(id_funcionario, nome, cargo, telefone, salario,
 }
 
 async function deleteFuncionario(id_funcionario) {
-  const sql = 'DELETE FROM funcionarios WHERE id_funcionario = ?';
+  const sql = 'UPDATE FROM funcionarios SET deletado = 1 WHERE id_funcionario = ?'
   const conn = await database.connectDB();
   await conn.query(sql, [id_funcionario]);
   conn.end();
